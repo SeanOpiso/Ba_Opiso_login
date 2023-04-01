@@ -1,0 +1,282 @@
+body {
+  padding: 0;
+  margin: 0;
+  background-color: #e5e5e5;
+  font-family: 'Poppins', sans-serif;
+}
+
+/* Sets the background for the header */
+header {
+	padding: 10px 0px;
+	margin: 0;
+	background-color: rgb(81, 81, 255);
+}
+
+/* Sets the text color and font of the header text */
+header h1 {
+	padding: 0;
+	margin: 0;
+	text-align: center;
+	color: white;
+	font-family: 'Rowdies', cursive;
+}
+
+/* Sets the logo size and position in the header */
+#logo {
+	height: 40px;
+	width: 40px;
+	display: inline;
+	margin: 11.5px;
+	position: absolute;
+	top: 0;
+	left: 0;
+}
+
+#mainBody {
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+}
+
+#mainBody div {
+  width: 60%;
+}
+
+#mainBody div p {
+  font-size: large;
+  font-weight: bold;
+  text-align: center;
+}
+
+/* Full-width input fields */
+input[type=text], input[type=password] {
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  box-sizing: border-box;
+}
+
+/* Set a style for all buttons */
+button {
+  background-color: #04AA6D;
+  color: white;
+  padding: 14px 20px;
+  margin: 8px 0;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  width: 100%;
+}
+
+button:hover {
+  opacity: 0.8;
+}
+
+#loginButton {
+  width: 6rem;
+	background-color: rgb(81, 81, 255);
+	border: none;
+	text-align: center;
+	cursor: pointer;
+}
+
+/* Extra styles for the cancel button */
+.cancelbtn {
+  width: auto;
+  padding: 10px 18px;
+  background-color: #f44336;
+}
+
+/* Center the image and position the close button */
+.imgcontainer {
+  text-align: center;
+  margin: 24px 0 12px 0;
+  position: relative;
+}
+
+img.avatar {
+  width: 40%;
+  border-radius: 50%;
+}
+
+.container {
+  padding: 16px;
+}
+
+.container input {
+  border-radius: 10px;
+}
+
+.container input:focus {
+  background-color: rgb(207, 207, 207);
+}
+
+#formFooter {
+  background-color: #f1f1f1;
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+}
+
+span.psw {
+  float: right;
+  padding-top: 16px;
+}
+
+#noInput {
+  color: #f44336;
+  text-align: center;
+  font-style: italic;
+}
+
+#unameError {
+  color: #f44336;
+}
+
+#pswError {
+  color: #f44336;
+}
+
+/* The Modal (background) */
+.modal {
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Sit on top */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  background-color: rgb(0,0,0); /* Fallback color */
+  background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+  padding-top: 60px;
+}
+
+/* Modal Content */
+.modal-content {
+  background-color: #fefefe;
+  margin: 5% auto 15% auto; /* 5% from the top, 15% from the bottom and centered */
+  border: 1px solid #888;
+  border-radius: 10px; /* Curved border */
+  width: 50%;
+}
+
+/* The Close Button */
+.close {
+  position: absolute;
+  right: 25px;
+  top: 0;
+  color: #000;
+  font-size: 35px;
+  font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+  color: red;
+  cursor: pointer;
+}
+
+/* Add Zoom Animation */
+.animate {
+  animation: animatezoom 0.6s
+}
+
+@keyframes animatezoom {
+  from {transform: scale(0)} 
+  to {transform: scale(1)}
+}
+
+/* Change styles for span and cancel button on extra small screens */
+@media screen and (max-width: 300px) {
+  span.psw {
+    display: block;
+    float: none;
+  }
+  .cancelbtn {
+    width: 100%;
+  }
+}
+
+/*Sets up footer bg color and padding*/
+footer {
+	background-color: #606060;
+	padding: 20px;
+	margin: 0;
+}
+
+/*Sets up footer header alignments and colors*/
+footer h4 {
+	text-align: center;
+	color: white;
+}
+
+/*Sets up footer text alignments and colors*/
+footer p {
+	text-align: center;
+	color: white;
+	font-size: 13px;
+}
+
+/*Sets up the width for the icons section*/
+#icons {
+	width: 100%;
+}
+
+/*Sets up the margin between the different socmed links*/
+.socmed {
+	margin: 5px;
+}
+
+/*Sets up the transparent png for the sprites*/
+.trans {
+	width: 0px;
+	height: 0px;
+}
+
+/*Sets up facebook link sprite*/
+#fb {
+	width: 75px;
+	height: 75px;
+	background: url(images/socmed_sprite.png) 0px 0px/318.75px 157.5px;
+}
+
+/*Sets up twitter link sprite*/
+#twitter {
+	width: 75px;
+	height: 75px;
+	background: url(images/socmed_sprite.png) -79px 0px/318.75px 157.5px;
+}
+
+/*Sets up instagram link sprite*/
+#insta {
+	width: 75px;
+	height: 75px;
+	background: url(images/socmed_sprite.png) -236px 0px/318.75px 157.5px;
+}
+
+/*Changes facebook link sprite when hovered*/
+#fb:hover {
+	width: 75px;
+	height: 75px;
+	background: url(images/socmed_sprite.png) 0px -82.5px/318.75px 157.5px;
+}
+
+/*Changes twitter link sprite when hovered*/
+#twitter:hover {
+	width: 75px;
+	height: 75px;
+	background: url(images/socmed_sprite.png) -79px -82.5px/318.75px 157.5px;
+}
+
+/*Changes instagram link sprite when hovered*/
+#insta:hover {
+	width: 75px;
+	height: 75px;
+	background: url(images/socmed_sprite.png) -236px -82.5px/318.75px 157.5px;
+}
+
+/*Removes the text decoration from socmed links*/
+#icons center a {
+	text-decoration: none;
+}

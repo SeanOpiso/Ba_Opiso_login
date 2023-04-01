@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="description" content="Website for the 3rd QUarter Project">
+        <meta name="author" content="Sean Bryn D. Opiso">
+        <title>Couples For Christ Unofficial Website | Login</title>
+        <link rel="icon" type="image/x-icon" href="images/favicon.png">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Rowdies:wght@300&display=swap" rel="stylesheet">
+
+        <link rel="stylesheet" type="text/css" href="style_login.css">
+        <script src="scripts.js"></script>
+    </head>
+    <body>
+        <header>
+            <a href="https://www.couplesforchristglobal.org/">
+                <img src="images/favicon.png" id="logo">
+            </a>
+            <h1>Couples For Christ</h1>
+        </header>
+
+        <center id="mainBody">
+            <img src="images/cfclogo.png">
+            <div>
+                <p>
+                    We are Couples for Christ, a Catholic movement advocating for the renewal and strengthening of Christian family life. Join us now, and spread the Word of God!
+                </p>
+            </div>
+            <button id="loginButton" onclick="document.getElementById('id01').style.display='block'">Login</button>
+        </center>
+
+        <div id="id01" class="modal">
+            <form class="modal-content animate">
+                <div class="imgcontainer">
+                    <span onclick="document.getElementById('id01').style.display='none'" class="close" title="Close Modal">&times;</span>
+                    <img src="images/avatar.png" alt="Avatar" class="avatar">
+                </div>
+
+                <p id="noInput"></p>
+
+                <div class="container">
+                    <label for="uname"><b>Username<span id="unameError"></span></b></label>
+                    <input type="text" id="uname" name="uname">
+
+                    <label for="psw"><b>Password<span id="pswError"></span></b></label>
+                    <input type="password" id="psw" name="psw">
+            
+                    <button type="button" onclick="login()">Login</button>
+                </div>
+
+                <div id="formFooter" class="container">
+                    <button type="button" onclick="document.getElementById('id01').style.display='none'" class="cancelbtn">Cancel</button>
+                    <span class="psw"><a href="#">Forgot password?</a></span>
+                </div>
+            </form>
+        </div>
+
+        <footer>
+            <br>
+            <div id="icons">
+                <center>
+                    <a class="socmed" id="fblink" href="https://www.facebook.com/sean.opiso">
+                        <img class="trans" id="fb" src="images/trans.png">
+                    </a>
+                    <a class="socmed" id="twitterlink" href="https://twitter.com/AtarusRFL">
+                        <img class="trans" id="twitter" src="images/trans.png">
+                    </a>
+                    <a class="socmed" id="instalink" href="https://www.instagram.com/atarusrfl/">
+                        <img class="trans" id="insta" src="images/trans.png">
+                    </a>
+                </center>
+            </div>
+            <h4>Address:</h4>
+            <p>Apartelle 12, Star Mall Complex,</p>
+            <p>Edsa corner Shaw Blvd.</p>
+            <p>Mandaluyong City, Metro Manila</p>
+            <h4>Email Address:</h4>
+            <p>homeoffice@cfcffl.org</p>
+            <h4>Telephone Number:</h4>
+            <p>(632) 718-2213</p>
+        <p>Couples for Christ Global Mission Foundation Inc. Copyright 2023 &#169; All rights Reserved.</p>
+        </footer>
+    </body>
+</html>
